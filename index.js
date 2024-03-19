@@ -25,6 +25,3 @@ app.get('/filmes', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor em execução em http://localhost:${PORT}`);
 });
-
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
