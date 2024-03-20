@@ -5,11 +5,12 @@ fetch('http://localhost:8080/filmes') // função que vai receber os dados.
         data.forEach(filme => {
             const filmeDiv = document.createElement('div'); // criando um novo elemento de interação. 
             filmeDiv.innerHTML = `
-                <h2>${filme.nome}</h2>
-                <img src="${filme.foto}" alt="${filme.nome}">
-                <p><strong>Descrição:</strong> ${filme.descricao}</p>
-                <p><strong>Elenco:</strong> ${filme.elenco}</p>
+            <h2>${filme.nome}</h2>
+            <img src="${filme.foto}" alt="${filme.nome}">
+            <p><strong>Descrição:</strong> ${filme.descricao}</p>
+            <p><strong>Elenco:</strong> ${filme.elenco}</p>
             `;
+            filmeDiv.className ='details';
             filmesList.appendChild(filmeDiv); // Recebendo as alteraçãoes da div. 
         });
     })
